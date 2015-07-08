@@ -7,9 +7,11 @@
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
 #include <netinet/ether.h>
-
+#include <net/if_ether.h>
 #include "common.h"
 #include "dhcpd.h"
+
+extern struct ether_addr *ether_aton_r (const char *asc, struct ether_addr * addr);
 
 /* on these functions, make sure your datatype matches */
 static int FAST_FUNC read_str(const char *line, void *arg)
