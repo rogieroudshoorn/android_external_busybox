@@ -498,7 +498,8 @@ extern char *strcasestr(const char *s, const char *pattern) FAST_FUNC;
 #endif
 
 #ifndef HAVE_STRCHRNUL
-extern char *strchrnul(const char *s, int c) FAST_FUNC;
+//extern char *strchrnul(const char *s, int c) FAST_FUNC;
+extern char* strchrnul(const char*, int) __purefunc;
 #endif
 
 #ifndef HAVE_STRSEP

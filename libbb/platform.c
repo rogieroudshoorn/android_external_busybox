@@ -9,7 +9,7 @@
 #include "libbb.h"
 
 #ifndef HAVE_STRCHRNUL
-char* FAST_FUNC strchrnul(const char *s, int c)
+char* strchrnul(const char *s, int c)
 {
 	while (*s != '\0' && *s != c)
 		s++;
